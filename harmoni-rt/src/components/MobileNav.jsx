@@ -1,6 +1,6 @@
 import { navItems } from '../data.js'
 
-export default function MobileNav({ open, onClose }) {
+export default function MobileNav({ open, onClose, page, navigate }) {
   if (!open) return null
   return (
     <div className="fixed inset-0 z-50 lg:hidden">
@@ -16,16 +16,19 @@ export default function MobileNav({ open, onClose }) {
           </button>
         </div>
         <nav className="flex flex-col gap-1">
-          {navItems.map((n) => (
+          {navItems.map((n) => {
+            const active = n.page === page
+            return (
             <a
-              key={n.path} href="#" onClick={(e) => { e.preventDefault(); onClose() }}
-              className={n.active
+              key={n.page} href={n.href} onClick={(e) => { e.preventDefault(); navigate(n.page); onClose() }}
+              className={active
                 ? 'flex items-center gap-3 px-3 py-2.5 bg-primary-container text-on-primary-container font-bold rounded-lg'
                 : 'flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-lg text-label-lg'}
             >
               <span className="material-symbols-outlined text-[20px]">{n.icon}</span>{n.label}
             </a>
-          ))}
+            )
+          })}
         </nav>
         <button className="mt-auto w-full flex items-center justify-center gap-2 bg-tertiary-container text-on-tertiary-container py-2.5 rounded-lg font-label-lg text-label-lg" type="button">
           <span className="material-symbols-outlined text-[18px]">e911_emergency</span>Kontak Siaga RT

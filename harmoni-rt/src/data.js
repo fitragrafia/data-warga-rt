@@ -1,9 +1,9 @@
 export const navItems = [
-  { icon: 'dashboard', label: 'Ringkasan RT', path: 'beranda-warga', active: false },
-  { icon: 'groups', label: 'Data Penduduk & KK', path: 'kependudukan-warga', active: true },
-  { icon: 'account_balance_wallet', label: 'Iuran & Buku Kas', path: 'keuangan-kas', active: false },
-  { icon: 'assignment_turned_in', label: 'Layanan Persuratan', path: 'layanan-surat', active: false },
-  { icon: 'security', label: 'Jadwal Ronda & Warta', path: 'informasi-keamanan', active: false },
+  { icon: 'dashboard', label: 'Ringkasan RT', page: 'ringkasan', href: '/' },
+  { icon: 'groups', label: 'Data Penduduk & KK', page: 'kependudukan', href: '/kependudukan' },
+  { icon: 'account_balance_wallet', label: 'Iuran & Buku Kas', page: 'keuangan', href: '/keuangan' },
+  { icon: 'assignment_turned_in', label: 'Layanan Persuratan', page: 'surat', href: '/surat' },
+  { icon: 'security', label: 'Jadwal Ronda & Warta', page: 'ronda', href: '/ronda' },
 ]
 
 export const families = [
