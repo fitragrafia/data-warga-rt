@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>HarmoniRT - Portal Informasi &amp; Manajemen Warga RT</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#dee8ff","on-error":"#ffffff","error-container":"#ffdad6","on-tertiary-fixed-variant":"#7b2f00","on-surface-variant":"#3e4949","on-tertiary-container":"#fffbff","primary-fixed-dim":"#73d6d7","on-secondary-fixed-variant":"#00504d","surface-container-highest":"#d8e3fb","surface-tint":"#00696a","on-background":"#111c2d","secondary-container":"#a1ede8","primary-container":"#008283","on-error-container":"#93000a","secondary-fixed-dim":"#88d4cf","on-tertiary-fixed":"#351000","inverse-surface":"#263143","on-secondary":"#ffffff","outline":"#6e7979","surface-container-low":"#f0f3ff","tertiary-container":"#bb5822","on-primary-container":"#f3fffe","error":"#ba1a1a","surface-bright":"#f9f9ff","secondary":"#106966","primary-fixed":"#90f3f3","inverse-on-surface":"#ecf1ff","surface":"#f9f9ff","on-secondary-container":"#186e6a","surface-dim":"#cfdaf2","surface-variant":"#d8e3fb","on-primary":"#ffffff","on-primary-fixed-variant":"#004f50","primary":"#006768","surface-container-lowest":"#ffffff","tertiary":"#9b4008","on-tertiary":"#ffffff","background":"#f9f9ff","surface-container":"#e7eeff","tertiary-fixed-dim":"#ffb694","inverse-primary":"#73d6d7","secondary-fixed":"#a4f0eb","tertiary-fixed":"#ffdbcc","on-secondary-fixed":"#00201e","on-surface":"#111c2d","on-primary-fixed":"#002020","outline-variant":"#bdc9c8"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1.5rem"},fontFamily:{"headline-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},fontSize:{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","fontWeight":"800"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"title-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"800"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="HarmoniRT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U2y4esCcqGUCXZbU15wrbAX_uOCCb67eRs231qhrmLvyNfaVN80B2xOdJ0YRU8g_rSGWWXrmbTDz1WLsVGSi3qr6wJALgM4uTHFxoYe1wddK33GHd0a7nrWs5LRW3sFPh6HFImzCNrIdFFz9AnNXQ9IG3-PdPa-sQuqpneyl4N_6wbZD0LacWTqJwKxLTOqVPRF-Hwq_3oN-XstqdvNOLG6x4e25jRFFJaO6pLG6Ot"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">HarmoniRT</span><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>RT 05 / RW 08 Kel. Sukamaju</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container px-space-md py-1.5 rounded-full"><span class="font-label-sm text-label-sm text-on-surface-variant">Saldo Kas Bersih:</span><span class="font-label-lg text-label-lg text-primary">Rp 18.450.000</span></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a class="px-space-md py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="beranda-warga" href="#">Beranda</a><a class="px-space-md py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="kependudukan-warga" href="#">Kependudukan</a><a class="px-space-md py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="keuangan-kas" href="#">Keuangan &amp; Iuran</a><a class="px-space-md py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="layanan-surat" href="#">Layanan Administrasi</a><a aria-current="page" class="px-space-md py-2 font-label-lg transition-colors bg-primary-container text-on-primary-container rounded-lg" data-path="informasi-keamanan" href="#">Informasi &amp; Ronda</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 bg-tertiary-container text-on-tertiary-container px-space-md py-2 rounded-lg font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="hidden sm:inline">SOS Satpam</span></button><button class="p-2 text-on-surface-variant hover:text-on-surface rounded-full hover:bg-surface-container relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-tertiary rounded-full"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Bambang S.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Ketua RT 05</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="w-full px-margin py-space-xl flex flex-col gap-space-xl">
+<!-- Hero / Section Header Banner with Pulse SOS Alert -->
+<section class="w-full relative overflow-hidden rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary p-space-xl shadow-md">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+              Sistem Terintegrasi 24/7
+            </span>
+<span class="text-secondary-fixed font-label-md text-label-md">Kelurahan Sukamaju • Rukun Tetangga 05</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-primary tracking-tight">
+            Pusat Informasi &amp; Keamanan Lingkungan RT 05
+          </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container opacity-95">
+            Portal koordinasi warga gotong royong, monitoring giliran ronda malam siskamling, serta saluran komunikasi tanggap darurat lingkungan terpadu.
+          </p>
+</div>
+<!-- Quick SOS Alert Action Button -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm w-full xl:w-auto">
+<a class="group relative flex items-center justify-center gap-space-sm px-6 py-4 rounded-xl bg-tertiary-container text-on-tertiary-container shadow-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] w-full xl:w-auto" href="#direktori-darurat">
+<span class="absolute -inset-1 rounded-xl bg-tertiary-container/60 blur animate-pulse pointer-events-none"></span>
+<span class="material-symbols-outlined text-2xl animate-bounce" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+<div class="flex flex-col text-left relative z-10">
+<span class="font-label-sm text-label-sm tracking-wider uppercase opacity-90">Tombol Darurat Siaga</span>
+<span class="font-title-sm text-title-sm font-bold">HUBUNGI POS SATPAM / AMBULANS</span>
+</div>
+<span class="material-symbols-outlined ml-2 relative z-10 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Sticky Main Notice Banner (Warta Penting) -->
+<section class="w-full">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col lg:flex-row items-stretch">
+<div class="lg:w-2/5 relative min-h-[220px]">
+<img class="w-full h-full object-cover" data-alt="A vivid community gathering in a sunny Indonesian suburban residential cluster with residents wearing green and casual clothes preparing mosquito fogging equipment, brooms, and planting saplings in a clean paved park, warm soft morning sunlight, documentary neighborhood photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXmEbBzsln919GBoHd5C65vZfwQOvjkvFWqdoxH0WR7an_izAlmoqwcBYSARocL-4uj5ORrGO6sTEXI_Ba5yZbTOGrKCko_tQs5CP2AiHtGRbR06PMr-VOi3C4nLEL7rq92rOE_Ur_EQNW75EckLhhfiqkmxkCOzyui0Ie-ChY4_ntrlzZNo5wRzqzvEsHHJHsDuMkbXm6Ndcf0WC4erFTdIXqajc54boAdOEVaGM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-surface-container-low"></div>
+<span class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">campaign</span>
+              PENGUMUMAN UTAMA PEKAN INI
+            </span>
+</div>
+<div class="p-space-lg lg:w-3/5 flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                  Minggu, 17 November 2024
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  07:00 - 11:30 WIB
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                  Lapangan Serbaguna Blok B &amp; Selokan Induk
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">
+                Jadwal Kerja Bakti Kebersihan &amp; Fogging Nyamuk Masal Serentak
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Mengantisipasi lonjakan musim penghujan dan pencegahan DBD. Seluruh kepala keluarga diharapkan mengutus minimal 1 perwakilan anggota keluarga untuk pembersihan drainase air dan penyemprotan abate. Disediakan sarapan lontong sayur gotong royong dari PKK RT 05.
+              </p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Koordinator Lapangan:</span>
+<span class="font-label-lg text-label-lg text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+                  Pak Gunawan (Seksi Lingkungan Hidup)
+                </span>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors font-label-lg text-label-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                  Unduh Surat Edaran PDF
+                </button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-lg text-label-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+                  Konfirmasi Hadir
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2-Column Responsive Layout: Announcements & Siskamling Schedule -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column (7 cols): Papan Pengumuman Digital RT -->
+<section class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">newspaper</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Papan Pengumuman Warga</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Arsip edaran, agenda berkala, dan instruksi keamanan rukun tetangga</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Total 3 Warta Aktif
+          </span>
+</div>
+<!-- Filter Chips Carousel -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm" type="button">
+            Semua (8)
+          </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+            Kerja Bakti
+          </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+            Posyandu
+          </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+            Rapat Warga
+          </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+            Himbauan Keamanan
+          </button>
+</div>
+<!-- Feed of Cards -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: Posyandu -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md">
+<div class="md:w-36 h-36 rounded-lg overflow-hidden shrink-0 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A warm, bright health clinic in Indonesia where local midwifes and women are gently weighing toddlers and recording health notes on clipboards, soft pastel teal colors, community healthcare scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAleAdimRyGxE3jDAuqGo_Hi5UDRlTMjKs2_bX-Bc9haYX171kX1kZ4bzW5cQhVxplynFwh_galJp7GTJdW9_-a5-KRfVko7Nk4ad718w9d5eJwMWYIvsHvDfAI3G1YtfzPDPDWZ8D6GjiJW7Gbq5U_mpxVx8uPn5X0wefhrTRXYC3i2gCSIDrNz502WRdzWAH-qgbsCWUSpHIHtP3_PgRAkt-yVHzO-pRrYx0n_ag"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] font-bold text-primary">Flyer Posyandu</span>
+</div>
+<div class="flex-1 flex flex-col justify-between gap-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase">
+                    Kesehatan &amp; Sosial
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span>
+                    Selasa, 12 Nov 2024
+                  </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface hover:text-primary transition-colors cursor-pointer">
+                  Jadwal Posyandu Balita &amp; Lansia "Melati Indah"
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Layanan penimbangan balita, vitamin A, imunisasi dasar lengkap, serta pemeriksaan tensi &amp; gula darah gratis untuk lansia RT 05 di Balai Warga.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt- space-xs">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+                  Balai Pertemuan Warga RW 08
+                </div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container transition-colors" title="Unduh Jadwal Imunisasi" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</button>
+<button class="text-primary hover:text-primary-container font-label-lg text-label-lg flex items-center gap-1" type="button">
+                    Detail Jadwal <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: Rapat Musyawarah CCTV -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md">
+<div class="md:w-36 h-36 rounded-lg overflow-hidden shrink-0 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="An evening townhall community meeting in a neighborhood hall in Indonesia with diverse residents sitting on chairs listening to a speaker presenting security camera blueprints on a projector screen, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeDCynLlFATe4zxxwkhK6MlOOki_k2SkfEdXD3BOpL8P1E8NraI2ooWTWx3VITOwfy1F14wRS-TRU1Qo7xnhoXLtWKZx0lAKhBCaBRfJvSwiXlmYsuUn5RZawd3m9Vlvqy6bueEGxhWz1V28Xr1Taxp8jmUPsyS5VITjdIxw_2VvZoJpGBBUzNcJz3Tra2no4a9yUzhn2PLH0_AssVHKn5bMYDYl8a-ZwK41ON4fI"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded text-[10px] font-bold text-primary">Proposal Titik</span>
+</div>
+<div class="flex-1 flex flex-col justify-between gap-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm uppercase">
+                    Musyawarah Warga
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span>
+                    Sabtu, 16 Nov 2024
+                  </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface hover:text-primary transition-colors cursor-pointer">
+                  Musyawarah Rencana Penambahan 6 Titik CCTV Baru
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Pembahasan alokasi dana kas RT dan penentuan titik rawan di Gang Melati dan Blok C. Setiap kepala keluarga dimohon mengutus perwakilan demi transparansi anggaran.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+                  Pukul 19.30 WIB (Ba'da Isya)
+                </div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container transition-colors" title="Proposal Rencana Anggaran" type="button">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<button class="text-primary hover:text-primary-container font-label-lg text-label-lg flex items-center gap-1" type="button">
+                    Lihat Agenda <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Himbauan Keamanan Portal -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md">
+<div class="md:w-36 h-36 rounded-lg overflow-hidden shrink-0 relative bg-surface-container">
+<div class="w-full h-full bg-tertiary-fixed flex flex-col items-center justify-center text-on-tertiary-fixed p-3 text-center">
+<span class="material-symbols-outlined text-4xl mb-1 text-tertiary">lock_clock</span>
+<span class="font-label-sm text-label-sm font-bold uppercase">Jam Malam Lingkungan</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col justify-between gap-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm uppercase">
+                    Himbauan Waspada
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">security</span>
+                    Berlaku Setiap Hari
+                  </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface hover:text-primary transition-colors cursor-pointer">
+                  Waspada Tamu Asing &amp; Prosedur Penutupan Portal 23:00 WIB
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Portal barat dan timur ditutup rapat setiap pukul 23:00 WIB. Tamu yang berkunjung wajib melapor satpam pos utama dan meninggalkan kartu identitas jika menginap &gt; 24 jam.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">warning</span>
+                  Akses Satu Pintu (Pos 1 Utama)
+                </div>
+<button class="text-primary hover:text-primary-container font-label-lg text-label-lg flex items-center gap-1" type="button">
+                  Aturan Lengkap <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Right Column (5 cols): Siskamling Schedule & Ronda Management -->
+<section class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">nightlight</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Jadwal Siskamling</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sistem giliran ronda malam warga RT 05</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+            Pekan Ke-3 Nov
+          </span>
+</div>
+<!-- Siskamling Interactive Control Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Today's Duty Highlight -->
+<div class="rounded-xl p-space-md bg-gradient-to-br from-primary-container to-secondary text-on-primary flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-surface-container-lowest/30 text-on-primary text-[12px] font-bold">
+                  !
+                </span>
+<span class="font-title-sm text-title-sm uppercase tracking-wider text-secondary-fixed">HARI INI • JUMAT MALAM</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-2.5 py-0.5 rounded-full backdrop-blur-md">
+                22.00 - 04.30 WIB
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-md text-headline-md font-extrabold text-on-primary tracking-tight">Regu Rajawali</h3>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Pos Ronda Utama</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">Area Tugas Patroli: Jalan Utama, Blok A, Blok B, &amp; Pintu Gerbang Timur</p>
+</div>
+<div class="bg-surface-container-lowest/15 backdrop-blur-sm rounded-lg p-3 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase">Anggota Bertugas Malam Ini:</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-body-sm">
+<li class="flex items-center justify-between">
+<span class="font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">military_tech</span>
+                    Bpk. Bambang S. (Danru)
+                  </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">Siap / Hadir</span>
+</li>
+<li class="flex items-center justify-between">
+<span>• Bpk. Faisal Tanjung</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">Siap / Hadir</span>
+</li>
+<li class="flex items-center justify-between">
+<span>• Bpk. Danu Wijaya</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest/30">Menunggu Check-in</span>
+</li>
+<li class="flex items-center justify-between">
+<span>• Bpk. Aris Munandar</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest/30">Menunggu Check-in</span>
+</li>
+</ul>
+</div>
+<!-- Action Buttons: Check-in Pos Ronda & Tukar Jadwal -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg hover:bg-secondary-fixed-dim transition-colors shadow-sm font-bold" id="btn-checkin" type="button">
+<span class="material-symbols-outlined text-[18px]">pin_drop</span>
+                Check-in Pos
+              </button>
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg hover:bg-surface-container transition-colors shadow-sm" id="btn-tukar" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+                Tukar Jadwal
+              </button>
+</div>
+</div>
+<!-- Saturday Schedule (Tomorrow) -->
+<div class="rounded-xl p-space-md bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">SABTU MALAM (BESOK)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">22.00 - 04.30 WIB</span>
+</div>
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Regu Garuda</h4>
+<span class="font-label-sm text-label-sm text-primary">Patroli Blok C &amp; D</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Petugas: Bpk. Ridwan (Danru), Bpk. Taufik Hidayat, Bpk. Gunawan Wibowo.
+            </p>
+</div>
+<!-- Weekly Mini Schedule Grid -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rotasi Pekanan Regu Ronda:</span>
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm">
+<div class="bg-surface-container p-2 rounded flex flex-col gap-1 opacity-70">
+<span class="text-on-surface-variant">Sen</span>
+<span class="font-bold text-on-surface">Elang</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col gap-1 opacity-70">
+<span class="text-on-surface-variant">Sel</span>
+<span class="font-bold text-on-surface">Kancil</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col gap-1 opacity-70">
+<span class="text-on-surface-variant">Rab</span>
+<span class="font-bold text-on-surface">Merpati</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col gap-1 opacity-70">
+<span class="text-on-surface-variant">Kam</span>
+<span class="font-bold text-on-surface">Banteng</span>
+</div>
+<div class="bg-primary text-on-primary p-2 rounded flex flex-col gap-1 shadow-sm">
+<span class="font-bold">Jum</span>
+<span class="font-extrabold">Rajawali</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col gap-1">
+<span class="text-on-surface-variant">Sab</span>
+<span class="font-bold text-on-surface">Garuda</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col gap-1 opacity-70">
+<span class="text-on-surface-variant">Min</span>
+<span class="font-bold text-on-surface">Komodo</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-2">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">coffee</span>
+              Kopi &amp; konsumsi disiapkan Pos Satpam
+            </span>
+<a class="text-primary hover:underline font-label-md text-label-md" href="#">Unduh SK Jadwal</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Section 3: Direktori Kontak Darurat & Speed Dial Lingkungan -->
+<section class="w-full flex flex-col gap-space-lg pt-space-md" id="direktori-darurat">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tertiary text-2xl">call_log</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Speed Dial • Bantuan Segera</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Direktori Kontak Darurat &amp; Nomor Penting</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Simpan nomor penting berikut pada ponsel Anda untuk keadaan mendesak, kebakaran, medis, dan ketertiban umum lingkungan RT 05.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-3 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+            Kontak Terverifikasi Pengurus
+          </span>
+</div>
+</div>
+<!-- Quick Contact Grid (5 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<!-- Contact 1: Ketua RT 05 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-sm relative overflow-hidden group">
+<div class="w-1.5 h-full bg-primary absolute left-0 top-0"></div>
+<div class="flex flex-col gap-2 pl-1">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                Ketua RT 05
+              </span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bpk. H. Ahmad Fauzi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rumah: Blok A No. 12</p>
+</div>
+<div class="font-label-lg text-label-lg text-primary tracking-wide">
+              0812-3456-7890
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors font-label-md text-label-md" href="https://wa.me/6281234567890" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+              WhatsApp
+            </a>
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-label-md" href="tel:081234567890">
+<span class="material-symbols-outlined text-[16px]">call</span>
+              Panggil
+            </a>
+</div>
+</div>
+<!-- Contact 2: Pos Satpam 24 Jam -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-sm relative overflow-hidden group">
+<div class="w-1.5 h-full bg-tertiary-container absolute left-0 top-0"></div>
+<div class="flex flex-col gap-2 pl-1">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold">
+                Satpam 24 Jam
+              </span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bpk. Sugeng</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pos Induk Gerbang Depan</p>
+</div>
+<div class="font-label-lg text-label-lg text-tertiary tracking-wide font-bold">
+              0813-8899-0011
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors font-label-md text-label-md" href="https://wa.me/6281388990011" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+              WhatsApp
+            </a>
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-tertiary-container text-on-tertiary-container hover:bg-tertiary transition-colors font-label-md text-label-md font-bold" href="tel:081388990011">
+<span class="material-symbols-outlined text-[16px]">phone_in_talk</span>
+              Panggil
+            </a>
+</div>
+</div>
+<!-- Contact 3: Layanan Ambulans Siaga -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-sm relative overflow-hidden group">
+<div class="w-1.5 h-full bg-error absolute left-0 top-0"></div>
+<div class="flex flex-col gap-2 pl-1">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+                Ambulans Medis
+              </span>
+<span class="material-symbols-outlined text-error text-[18px]">medical_services</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Puskesmas Sukamaju</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pelayanan Rujukan Gawat</p>
+</div>
+<div class="font-label-lg text-label-lg text-error tracking-wide font-extrabold">
+              118 / (021) 778899
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<a class="col-span-2 flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-error text-on-error hover:opacity-95 transition-opacity font-label-md text-label-md font-bold" href="tel:118">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+              Hubungi Ambulans (118)
+            </a>
+</div>
+</div>
+<!-- Contact 4: Bhabinkamtibmas Polsek -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-sm relative overflow-hidden group">
+<div class="w-1.5 h-full bg-secondary absolute left-0 top-0"></div>
+<div class="flex flex-col gap-2 pl-1">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                Bhabinkamtibmas
+              </span>
+<span class="material-symbols-outlined text-secondary text-[18px]">local_police</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Aiptu M. Ridwan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Polsek Sukamaju Presisi</p>
+</div>
+<div class="font-label-lg text-label-lg text-primary tracking-wide">
+              0811-9876-5432
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-colors font-label-md text-label-md" href="https://wa.me/6281198765432" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+              WhatsApp
+            </a>
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-secondary text-on-secondary hover:bg-primary transition-colors font-label-md text-label-md" href="tel:081198765432">
+<span class="material-symbols-outlined text-[16px]">call</span>
+              Panggil
+            </a>
+</div>
+</div>
+<!-- Contact 5: Petugas Kebersihan Lingkungan -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-sm relative overflow-hidden group">
+<div class="w-1.5 h-full bg-outline-variant absolute left-0 top-0"></div>
+<div class="flex flex-col gap-2 pl-1">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                Sanitasi &amp; Sampah
+              </span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">recycling</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Pak Wardi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pengangkutan Senin &amp; Kamis</p>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface tracking-wide">
+              0878-1234-9900
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-colors font-label-md text-label-md" href="https://wa.me/6287812349900" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+              WhatsApp
+            </a>
+<a class="flex items-center justify-center gap-1 py-2 px-2 rounded-lg bg-surface-container-highest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="tel:087812349900">
+<span class="material-symbols-outlined text-[16px]">call</span>
+              Panggil
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Modal Dialog: Check-in Pos Ronda Interaktif -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="modal-checkin">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-xl flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Konfirmasi Kehadiran Ronda</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" id="close-modal-checkin" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Sistem akan mendeteksi koordinat GPS perangkat Anda untuk memastikan presensi berada di radius 50m Pos Ronda Utama RT 05.
+        </p>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">my_location</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lokasi Pos Terdeteksi:</span>
+<span class="font-label-md text-label-md text-on-surface">Pos Ronda Utama RT 05 (Akurasi: 4 Meter)</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Pilih Nama Anggota:</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+<option>Bpk. Danu Wijaya (Blok B/04)</option>
+<option>Bpk. Aris Munandar (Blok A/15)</option>
+<option>Anggota Pengganti / Badal</option>
+</select>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-lg text-label-lg" id="cancel-checkin" type="button">
+            Batal
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-bold" id="submit-checkin" type="button">
+            Kirim Presensi Hadir
+          </button>
+</div>
+</div>
+</div>
+<!-- Modal Dialog: Tukar Jadwal Ronda -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="modal-tukar">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-xl flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Permohonan Tukar Jadwal</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" id="close-modal-tukar" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Kirim notifikasi pertukaran tanggal ronda ke rekan sesama warga satu blok untuk persetujuan bersama.
+        </p>
+<div class="flex flex-col gap-space-sm">
+<div>
+<label class="font-label-md text-label-md text-on-surface mb-1 block">Jadwal Asal Anda:</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container text-on-surface-variant font-body-md text-body-md" readonly="" type="text" value="Jumat Malam (Regu Rajawali)"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface mb-1 block">Ingin Tukar dengan Jadwal:</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+<option>Sabtu Malam - Bpk. Gunawan Wibowo</option>
+<option>Minggu Malam - Bpk. Hendra Gunadi</option>
+<option>Senin Depan - Bpk. Suryadi</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface mb-1 block">Alasan Berhalangan:</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md" placeholder="Contoh: Tugas dinas luar kota sampai hari Sabtu..." rows="2"></textarea>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-lg text-label-lg" id="cancel-tukar" type="button">
+            Batal
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-bold" id="submit-tukar" type="button">
+            Ajukan ke Danru
+          </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      // Modal Check-in Handler
+      const btnCheckin = document.getElementById('btn-checkin');
+      const modalCheckin = document.getElementById('modal-checkin');
+      const closeCheckin = document.getElementById('close-modal-checkin');
+      const cancelCheckin = document.getElementById('cancel-checkin');
+      const submitCheckin = document.getElementById('submit-checkin');
+
+      if (btnCheckin && modalCheckin) {
+        btnCheckin.addEventListener('click', () => modalCheckin.classList.remove('hidden'));
+        const hideCheckin = () => modalCheckin.classList.add('hidden');
+        closeCheckin && closeCheckin.addEventListener('click', hideCheckin);
+        cancelCheckin && cancelCheckin.addEventListener('click', hideCheckin);
+        submitCheckin && submitCheckin.addEventListener('click', () => {
+          alert('Presensi kehadiran ronda berhasil dicatat ke sistem RT 05!');
+          hideCheckin();
+        });
+      }
+
+      // Modal Tukar Jadwal Handler
+      const btnTukar = document.getElementById('btn-tukar');
+      const modalTukar = document.getElementById('modal-tukar');
+      const closeTukar = document.getElementById('close-modal-tukar');
+      const cancelTukar = document.getElementById('cancel-tukar');
+      const submitTukar = document.getElementById('submit-tukar');
+
+      if (btnTukar && modalTukar) {
+        btnTukar.addEventListener('click', () => modalTukar.classList.remove('hidden'));
+        const hideTukar = () => modalTukar.classList.add('hidden');
+        closeTukar && closeTukar.addEventListener('click', hideTukar);
+        cancelTukar && cancelTukar.addEventListener('click', hideTukar);
+        submitTukar && submitTukar.addEventListener('click', () => {
+          alert('Pengajuan tukar jadwal telah terkirim ke WhatsApp Danru & warga bersangkutan.');
+          hideTukar();
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] py-margin mt-space-xl"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="HarmoniRT Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U2y4esCcqGUCXZbU15wrbAX_uOCCb67eRs231qhrmLvyNfaVN80B2xOdJ0YRU8g_rSGWWXrmbTDz1WLsVGSi3qr6wJALgM4uTHFxoYe1wddK33GHd0a7nrWs5LRW3sFPh6HFImzCNrIdFFz9AnNXQ9IG3-PdPa-sQuqpneyl4N_6wbZD0LacWTqJwKxLTOqVPRF-Hwq_3oN-XstqdvNOLG6x4e25jRFFJaO6pLG6Ot"/><span class="font-title-sm text-title-sm text-primary">HarmoniRT</span><span class="font-body-sm text-body-sm text-on-surface-variant">• Tata Kelola Warga Digital Guyub &amp; Transparan</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="informasi-keamanan" href="#">Pos Keamanan: 0812-9988-7711</a><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 RT 05 / RW 08 Kelurahan Sukamaju</span></div></div></footer></body></html>
