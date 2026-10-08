@@ -1,6 +1,6 @@
 import FamilyRow from './FamilyRow.jsx'
 
-export default function KeluargaTable({ rows, search, setSearch, status, setStatus, blok, setBlok, onDetail }) {
+export default function KeluargaTable({ rows, total, loading, search, setSearch, status, setStatus, blok, setBlok, onDetail }) {
   return (
     <div className="flex flex-col gap-space-md">
       <div className="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row gap-space-sm md:items-center justify-between">
@@ -46,13 +46,17 @@ export default function KeluargaTable({ rows, search, setSearch, status, setStat
               </tr>
             </thead>
             <tbody className="divide-y divide-surface-container-low font-body-md text-body-md text-on-surface">
-              {rows.map((f) => <FamilyRow key={f.id} f={f} onDetail={onDetail} />)}
-              {rows.length === 0 && <tr><td colSpan={6} className="py-8 text-center text-on-surface-variant">Tidak ada data yang cocok.</td></tr>}
+              {loading ? (
+                <tr><td colSpan={6} className="py-8 text-center text-on-surface-variant">Memuat data dari Supabase...</td></tr>
+              ) : (
+                rows.map((f) => <FamilyRow key={f.id} f={f} onDetail={onDetail} />)
+              )}
+              {!loading && rows.length === 0 && <tr><td colSpan={6} className="py-8 text-center text-on-surface-variant">Tidak ada data yang cocok.</td></tr>}
             </tbody>
           </table>
         </div>
         <div className="p-space-md bg-surface-container-low/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
-          <span className="font-body-sm text-body-sm text-on-surface-variant">Menampilkan <strong>1-{rows.length}</strong> dari <strong>88 KK</strong> (342 total jiwa)</span>
+          <span className="font-body-sm text-body-sm text-on-surface-variant">Menampilkan <strong>1-{rows.length}</strong> dari <strong>{total ?? rows.length} KK</strong></span>
           <div className="flex items-center gap-1">
             <button className="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant disabled:opacity-50" disabled type="button"><span className="material-symbols-outlined text-[18px]">chevron_left</span></button>
             <button className="px-3 py-1 rounded bg-primary text-on-primary font-bold" type="button">1</button>

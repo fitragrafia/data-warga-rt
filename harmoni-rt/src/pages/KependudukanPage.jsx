@@ -6,9 +6,11 @@ import MutasiSidebar from '../components/MutasiSidebar.jsx'
 import FamilyDrawer from '../components/FamilyDrawer.jsx'
 import TambahKKModal from '../components/TambahKKModal.jsx'
 import MutasiModal from '../components/MutasiModal.jsx'
-import { families } from '../data.js'
+import { useKartuKeluarga } from '../hooks/useKartuKeluarga.js'
+import { isSupabaseConfigured } from '../lib/supabase.js'
 
 export default function KependudukanPage() {
+  const { rows: families, stats, loading, usingRemote, error, refresh } = useKartuKeluarga()
   const [search, setSearch] = useState('')
   const [status, setStatus] = useState('all')
   const [blok, setBlok] = useState('all')
@@ -49,16 +51,25 @@ export default function KependudukanPage() {
           </button>
         </div>
       </div>
-      <MetricCards />
+      <MetricCards stats={stats} loading={loading} />
+      {!isSupabaseConfigured && (
+        <div className="px-4 py-3 rounded-xl bg-tertiary-fixed/40 text-tertiary font-body-sm text-body-sm flex items-center gap-2">
+          <span className="material-symbols-outlined text-[18px]">cloud_off</span>
+          Mode lokal — isi <code>VITE_SUPABASE_URL</code> &amp; <code>VITE_SUPABASE_ANON_KEY</code> di <code>.env</code> lalu restart dev server untuk memakai database. Lihat <code>supabase/README.md</code>.
+        </div>
+      )}
+      {usingRemote && error && (
+        <div className="px-4 py-3 rounded-xl bg-error-container text-on-error-container font-body-sm text-body-sm">{error}</div>
+      )}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
         <div className="lg:col-span-8 flex flex-col gap-space-md">
-          <KeluargaTable rows={rows} search={search} setSearch={setSearch} status={status} setStatus={setStatus} blok={blok} setBlok={setBlok} onDetail={setSelected} />
+          <KeluargaTable rows={rows} total={families.length} loading={loading} search={search} setSearch={setSearch} status={status} setStatus={setStatus} blok={blok} setBlok={setBlok} onDetail={setSelected} />
           <AgeChart />
         </div>
         <MutasiSidebar onMutasi={() => setShowMutasi(true)} />
       </div>
       <FamilyDrawer family={selected} onClose={() => setSelected(null)} />
-      <TambahKKModal open={showKK} onClose={() => setShowKK(false)} />
+      <TambahKKModal open={showKK} onClose={() => setShowKK(false)} onSaved={refresh} />
       <MutasiModal open={showMutasi} onClose={() => setShowMutasi(false)} />
     </div>
   )
